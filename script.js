@@ -1,4 +1,4 @@
-const text = ["Subita Kamal Reedee", "CSE Student", "Future Developer"];
+const text = ["Subaita Kamal Reedee", "CSE Student", "Future Developer"];
 let i = 0, j = 0, isDeleting = false;
 
 function type() {
