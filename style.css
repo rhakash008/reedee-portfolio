@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffe6f0, #fff0f5);
+}
+
+/* BACKGROUND SHAPES */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+body::before {
+  width: 300px; height: 300px;
+  background: pink;
+  top: -100px; left: -100px;
+}
+body::after {
+  width: 250px; height: 250px;
+  background: #ff69b4;
+  bottom: -100px; right: -100px;
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(10px);
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li { margin-left: 20px; }
+nav a { color: #ff4d88; text-decoration: none; }
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero img {
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px pink;
+}
+.hero h1 {
+  color: #ff4d88;
+}
+
+/* BUTTON */
+.btn {
+  padding: 10px 20px;
+  background: #ff69b4;
+  color: white;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px;
+}
+.btn:hover {
+  background: #ff1493;
+  transform: scale(1.1);
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: -100px;
+}
+.stat {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+/* CARD */
+.card {
+  margin: 80px auto;
+  width: 80%;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.6);
+}
+
+/* TIMELINE */
+.timeline {
+  border-left: 3px solid pink;
+  padding-left: 20px;
+}
+.timeline-item { margin-bottom: 20px; }
+
+/* SKILLS */
+.skills span {
+  background: pink;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+/* PROJECTS */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 20px;
+}
+.project {
+  background: #ffe4e1;
+  padding: 15px;
+  border-radius: 15px;
+}
+.project img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hero img {
+  width: 150px;         /* size of photo */
+  height: 150px;        /* keep square for circle */
+  border-radius: 50%;   /* makes it circular */
+  box-shadow: 0 0 20px pink;  /* soft glow */
+  object-fit: cover;    /* ensure the image fits nicely */
+}
+
+/* CONTACT */
+.contact-links a {
+  margin: 10px;
+  padding: 10px 20px;
+  background: #ff69b4;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* ANIMATION */
+.hidden {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.6s;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
